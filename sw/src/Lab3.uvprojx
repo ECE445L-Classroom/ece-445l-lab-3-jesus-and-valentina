@@ -409,6 +409,46 @@
               <FileType>1</FileType>
               <FilePath>..\inc\ST7735.c</FilePath>
             </File>
+            <File>
+              <FileName>SwitchDriver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SwitchDriver.c</FilePath>
+            </File>
+            <File>
+              <FileName>SwitchDriver.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SwitchDriver.h</FilePath>
+            </File>
+            <File>
+              <FileName>LCDDriver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\LCDDriver.c</FilePath>
+            </File>
+            <File>
+              <FileName>LCDDriver.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\LCDDriver.h</FilePath>
+            </File>
+            <File>
+              <FileName>SysTickDriver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SysTickDriver.c</FilePath>
+            </File>
+            <File>
+              <FileName>SysTickDriver.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SysTickDriver.h</FilePath>
+            </File>
+            <File>
+              <FileName>SoundDriver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SoundDriver.c</FilePath>
+            </File>
+            <File>
+              <FileName>SoundDriver.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SoundDriver.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
