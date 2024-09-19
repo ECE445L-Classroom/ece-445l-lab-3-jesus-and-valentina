@@ -5,4 +5,6 @@
 
 void Btn_Init(void);
 
+uint32_t Btn_Pressed(void);
+
 #endif
