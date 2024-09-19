@@ -22,13 +22,25 @@
  For more information about my classes, my research, and my books, see
  http://users.ece.utexas.edu/~valvano/
  */
+ 
 // Specify your hardware connections, feel free to change
-// PD0 is squarewave output to speaker
-// PE0 is mode select
-// PE1 is left
-// PE2 is right 
-// PE3 is up
-// PE4 is down
+
+// ST7735
+
+// LED+   (pin 15) TFT, connected to +3.3 V
+// CS     (pin 10) TFT, PA3 (SSI0Fss)
+// SCL    (pin 9)  TFT, SCK  PA2 (SSI0Clk)
+// SDA    (pin 8)  TFT, MOSI PA5 (SSI0Tx)
+// A0     (pin 7)  TFT, Data/Command PA6 (GPIO), high for data, low for command
+// RESET  (pin 6)  TFT, to PA7 (GPIO)
+// NC     (pins 3,4,5) not connected
+// VCC    (pin 2)  connected to +3.3 V
+// GND    (pin 1)  connected to ground
+
+// PB1 is squarewave output to speaker
+// PC4 is Button 1
+// PC7 is Button 2
+// PC6 is Button 3  
 // if alarm is sounding, any button will quiet the alarm
 
 #include <stdio.h>
