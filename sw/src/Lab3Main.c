@@ -38,9 +38,9 @@
 // GND    (pin 1)  connected to ground
 
 // PB1 is squarewave output to speaker
-// PC4 is Button 1
-// PC7 is Button 2
-// PC6 is Button 3  
+// PD0 is Button 1
+// PD1 is Button 2
+// PD2 is Button 3 
 // if alarm is sounding, any button will quiet the alarm
 
 #include <stdio.h>

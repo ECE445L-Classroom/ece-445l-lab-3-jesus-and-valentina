@@ -3,5 +3,6 @@
 
 #include <stdint.h>
 
+void Btn_Init(void);
 
 #endif
