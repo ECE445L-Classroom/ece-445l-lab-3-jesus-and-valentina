@@ -50,6 +50,7 @@
 #include "../inc/tm4c123gh6pm.h"
 #include "../inc/Timer0A.h"
 #include "Lab3.h"
+#include "SwitchDriver.h"
 // ---------- Prototypes   -------------------------
 void DisableInterrupts(void); // Disable interrupts
 void EnableInterrupts(void);  // Enable interrupts
@@ -57,7 +58,24 @@ void WaitForInterrupt(void);  // low power mode
 int main(void){
   DisableInterrupts();
   PLL_Init(Bus80MHz);    // bus clock at 80 MHz
+	Output_Init();
+	Btn_Init();
   // write this
+	
+	ST7735_FillScreen(0x0000);
+	ST7735_SetCursor(4, 4);
+	ST7735_OutString("Bevo Run");
+	
+	ST7735_SetCursor(1, 6);
+	ST7735_OutString("English:");
+	ST7735_SetCursor(1, 7);
+	ST7735_OutString("Left Button");
+	
+	ST7735_SetCursor(1, 8);
+	ST7735_OutString("Espanol:");
+	ST7735_SetCursor(1, 9);
+	ST7735_OutString("Boton Derecho");
+	
   EnableInterrupts();
   while(1){
       // write this
