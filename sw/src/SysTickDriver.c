@@ -6,3 +6,10 @@
 
 #include <stdint.h>
 #include "../inc/tm4c123gh6pm.h"
+
+void SysTickInit(void){
+    NVIC_ST_CTRL_R = 0;
+    NVIC_ST_CURRENT_R = 0;
+    NVIC_ST_RELOAD_R = 80000000/30; // 30Hz gameplay
+    NVIC_ST_CTRL_R = 0x7;
+}

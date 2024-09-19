@@ -49,8 +49,10 @@
 #include "../inc/PLL.h"
 #include "../inc/tm4c123gh6pm.h"
 #include "../inc/Timer0A.h"
+#include "../inc/Timer1A.h"
 #include "Lab3.h"
 #include "SwitchDriver.h"
+#include "LCDDriver.h"
 // ---------- Prototypes   -------------------------
 void DisableInterrupts(void); // Disable interrupts
 void EnableInterrupts(void);  // Enable interrupts
@@ -58,8 +60,8 @@ void WaitForInterrupt(void);  // low power mode
 int main(void){
   DisableInterrupts();
   PLL_Init(Bus80MHz);    // bus clock at 80 MHz
-	Output_Init();
 	Btn_Init();
+	LCD_init();
   // write this
 	
 	ST7735_FillScreen(0x0000);

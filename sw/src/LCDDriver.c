@@ -7,7 +7,16 @@
 #include <stdint.h>
 
 #include "../inc/tm4c123gh6pm.h"
+#include "../inc/ST7735.h"
+
+
+typedef uint16_t Color;
+void Draw_Clock(void){
+	Color blue = ST7735_Color565(144,213,255);
+	ST7735_DrawCircle(64,128,blue);
+}
 
 void LCD_Init(void){
-	
+	Output_Init();
+	Draw_Clock();
 }

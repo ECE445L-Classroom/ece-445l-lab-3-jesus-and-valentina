@@ -23,7 +23,7 @@ void Btn_Init(void){ //Initializes PORT D as inputs PD2-0
 	GPIO_PORTD_DIR_R &= ~(0x07); 						//PD2-0 Input		
 	GPIO_PORTD_DEN_R |= 0x07;               //Enable digital I/O on PC5
 	GPIO_PORTD_AFSEL_R &= ~(0x07);					//Disable alt function on PD2-0
-	GPIO_PORTD_PDR_R |= 0x07;               //enable pulldown resistor
+    GPIO_PORTD_PDR_R  |= 0x07;                          // eneable Pulldown resistors on PD2-0
 }
 
 // bit band all three buttons
@@ -48,3 +48,4 @@ uint32_t Btn_Pressed(void) {
     }
 
 }
+
