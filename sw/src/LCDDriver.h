@@ -4,6 +4,6 @@
 #include <stdint.h>
 #include "../inc/ST7735.h"
 
-void LCD_init(void);
+void LCD_Init(void);
 void Draw_Clock(void);
 #endif

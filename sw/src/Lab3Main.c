@@ -53,6 +53,7 @@
 #include "Lab3.h"
 #include "SwitchDriver.h"
 #include "LCDDriver.h"
+#include "SoundDriver.h"
 // ---------- Prototypes   -------------------------
 void DisableInterrupts(void); // Disable interrupts
 void EnableInterrupts(void);  // Enable interrupts
@@ -61,7 +62,9 @@ int main(void){
   DisableInterrupts();
   PLL_Init(Bus80MHz);    // bus clock at 80 MHz
 	Btn_Init();
-	LCD_init();
+	LCD_Init();
+	Sound_Init();
+	
   // write this
 	
 	ST7735_FillScreen(0x0000);
@@ -80,9 +83,8 @@ int main(void){
 	
   EnableInterrupts();
   while(1){
-      // write this
-      Clock_Delay1ms(10);
-      uint32_t btn_pressed = Btn_Pressed(); //Get which button was pressed
+		//TODO: make alarm ring
+		
 
   }
 }
